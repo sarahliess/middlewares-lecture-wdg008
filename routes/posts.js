@@ -7,6 +7,6 @@ const checkLanguage = require("../middlewares/checkLanguage");
 const checkTime = require("../middlewares/checkTime");
 
 router.route("/posts").get(checkLanguage, checkTime, getAllPosts);
-router.route("/posts/:id").get(getSinglePost);
+router.route("/posts/:id").get( getSinglePost);
 
 module.exports = router;
